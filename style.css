@@ -60,7 +60,7 @@
 #content {
   display: flex;
   flex-direction: column;
-  background-color: #eee;
+  background-color: #f5f1f1;
 }
 
 #content > section {
@@ -78,7 +78,7 @@
 }
 
 .intro {
-  padding-top: 160px;
+  padding-top: 120px;
 }
 
 .intro > p {
@@ -112,4 +112,21 @@
 
 label {
   display: block;
+}
+
+/* SIGN UP STYLING */
+.btn {
+  background-color: #596d48;
+  color: white;
+  border-radius: 5px;
+  padding: 10px 40px;
+  border: none;
+  font-weight: bold;
+  margin: 30px 0;
+}
+
+.signup p a {
+  color: #596d48;
+  text-decoration: none;
+  font-weight: 500;
 }

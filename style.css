@@ -20,6 +20,12 @@
   height: 100vh;
 }
 
+button,
+input {
+  font-family: inherit;
+  font-size: 100%;
+}
+
 /* LOGO STYLING */
 
 .image-sidebar {
@@ -73,8 +79,8 @@
 #content > section {
   flex: 1;
   padding-left: 40px;
-  padding-right: 160px;
-  border: 1px solid black;
+  padding-right: 100px;
+  /* border: 1px solid black; */
 }
 
 .intro,
@@ -85,21 +91,29 @@
 }
 
 .intro {
-  padding-top: 120px;
+  display: flex;
+  align-items: center;
 }
 
-.intro > p {
-  padding-bottom: 2rem;
+.intro-text p:last-of-type {
+  padding-top: 2rem;
 }
+
+/* .intro > p {
+  padding-bottom: 2rem;
+} */
 
 /* FORM STYLING */
 
 .form-container p {
-  padding: 16px 0;
+  padding: 20px 0;
 }
 
 .form-container {
   background-color: white;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
 }
 
 .form {
@@ -117,8 +131,27 @@
   flex: 1;
 }
 
-label {
+.form label {
   display: block;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  letter-spacing: 1px;
+}
+
+.form input {
+  border: 1px solid #e5e7eb;
+  padding: 5px 8px;
+  border-radius: 5px;
+}
+
+.form input:focus {
+  outline: none;
+  border: 1px solid blue;
+  box-shadow: 0 0 10px #e5e7eb;
+}
+
+.form .error {
+  border-color: red;
 }
 
 /* SIGN UP STYLING */
@@ -130,6 +163,7 @@ label {
   border: none;
   font-weight: bold;
   margin: 30px 0;
+  cursor: pointer;
 }
 
 .signup p a {

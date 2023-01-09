@@ -99,21 +99,19 @@ input {
   padding-top: 2rem;
 }
 
-/* .intro > p {
-  padding-bottom: 2rem;
-} */
-
 /* FORM STYLING */
 
 .form-container p {
   padding: 20px 0;
+  margin-bottom: 20px;
 }
 
 .form-container {
   background-color: white;
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
+  justify-content: center;
+  box-shadow: 0 5px 10px #e5e7eb;
 }
 
 .form {
